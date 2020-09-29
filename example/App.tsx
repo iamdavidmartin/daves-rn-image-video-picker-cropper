@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, StatusBar, Text} from 'react-native';
+import {StyleSheet, StatusBar, View} from 'react-native';
 
 import Picker from 'daves-rn-image-video-picker-cropper';
 
@@ -9,15 +9,23 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={styles.full}>
-        <Picker nextTitle="hello, world!" />
-      </SafeAreaView>
+      <View style={styles.full}>
+        <Picker
+          nextTitle="hello, world!"
+          backgroundColor="#ccc"
+          maxScale={4}
+          multipleSelect={true}
+          multipleSelectMaxItems={4}
+        />
+      </View>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  full: {},
+  full: {
+    flex: 1,
+  },
 });
 
 export default App;

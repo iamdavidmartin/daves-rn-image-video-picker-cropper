@@ -10,8 +10,12 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@react-native-community/cameraroll": "^4.0.0",
+    "@types/lodash": "^4.14.161",
+    "lodash": "^4.17.20",
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.2",
+    "react-native-easy-view-transformer": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
